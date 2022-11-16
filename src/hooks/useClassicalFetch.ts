@@ -4,7 +4,7 @@ import { useStateContext } from '../context/StateProvider'
 import { Task } from '../types/types'
 import { TASKS_ENDPOINT } from '../urls'
 
-export const useTasks = () => {
+export const useClassicalFetch = () => {
   const { tasks, setTasks } = useStateContext()
   const [isLoading, setLoading] = useState(false)
   const [isError, setError] = useState(false)
