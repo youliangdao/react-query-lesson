@@ -12,6 +12,6 @@ export const useQueryTasks = () => {
     queryKey: ['tasks'],
     queryFn: fetchTasks,
     cacheTime: 10000,
-    staleTime: 0,
+    staleTime: 10000,
   })
 }
